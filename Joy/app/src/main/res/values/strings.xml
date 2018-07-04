@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Joy</string>
+    <string name="Logo">Joy</string>
+    <string name="tagline">Your entire wedding in one place</string>
+
+    <string name="guesttagline">New guest to a Joy wedding</string>
+    <string name="admintagline">I\'m getting married</string>
+    <string name="signinbtn"> <b>PROCEED</b></string>
+    <string name="forgot_pass">Don\'t remember your password?</string>
+    <string name="loginbtn">LOG IN ></string>
+    <string name="signupbtn">CREATE NEW ACCOUNT ></string>
+    <string name="signuptagline">Create New Account</string>
+</resources>
