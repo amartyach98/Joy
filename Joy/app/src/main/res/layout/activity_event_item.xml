@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
 
@@ -16,27 +18,27 @@
             android:layout_height="wrap_content">
 
 
-
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="Event"
-                android:textColor="@color/White"
-                 />
+                android:textColor="@color/White" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 
 
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:layout_below="@+id/toolbar"
         app:cardBackgroundColor="@android:color/white"
         app:cardCornerRadius="4dp"
         app:cardElevation="6dp">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,4 +122,17 @@
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingbtn"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/floating_btn_icon"
+        tools:ignore="VectorDrawableCompat" />
+
+</RelativeLayout>

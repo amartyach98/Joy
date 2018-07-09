@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Welcome">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_Story"
+                    android:icon="@drawable/story"
+                    android:title="Story" />
+                <item
+                    android:id="@+id/nav_Schedule"
+                    android:icon="@drawable/calendar"
+                    android:title="Schedule" />
+                <item
+                    android:id="@+id/nav_Travel"
+                    android:icon="@drawable/aircraft"
+                    android:title="Travel" />
+
+                <item
+                    android:id="@+id/nav_Guests"
+                    android:icon="@drawable/guest"
+                    android:title="Guests" />
+                <item
+                    android:id="@+id/nav_moments"
+                    android:icon="@drawable/moments"
+                    android:title="Moments" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:icon="@drawable/settings"
+        android:title="Settings">
+
+
+    </item>
+
+</menu>

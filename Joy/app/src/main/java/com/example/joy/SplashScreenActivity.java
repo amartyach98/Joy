@@ -34,7 +34,9 @@ public class SplashScreenActivity extends AppCompatActivity {
         });
 
 
+
     }
+
 
     @Override
     protected void onPause() {

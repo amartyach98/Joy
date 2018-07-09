@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.joy">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,6 @@
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,20 +21,20 @@
         </activity>
         <activity
             android:name=".LoginScreenActivity"
-
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SignupScreenActivity"
-
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SignupDetailsActivity"
-
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EventActivity"
-
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventDetailActivity"
+            android:label="@string/title_activity_event_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
