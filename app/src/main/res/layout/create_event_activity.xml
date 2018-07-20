@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/welcometxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <RelativeLayout
+            android:id="@+id/welcmtojoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Joy"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcmtojoy"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_14sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you dont know when or where you can fill it later..."
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_20sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yourname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcometxt"
+        android:layout_marginLeft="@dimen/_6sdp"
+
+        android:layout_marginTop="@dimen/_30sdp">
+
+        <RelativeLayout
+            android:id="@+id/firstname"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edttxtfname"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+
+            android:layout_toRightOf="@+id/firstname">
+
+            <EditText
+                android:id="@+id/edttxtlname"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/yourpartnersname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourname"
+        android:layout_marginLeft="@dimen/_6sdp"
+
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/pfirstname"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edttxtpfname"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="wrap_content"
+                android:hint="Partner's First Name"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+
+            android:layout_toRightOf="@+id/pfirstname">
+
+            <EditText
+                android:id="@+id/edttxtplname"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="wrap_content"
+                android:hint="Partner's Last Name"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    //when_where
+
+    <RelativeLayout
+        android:id="@+id/When_where"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourpartnersname"
+        android:layout_marginLeft="@dimen/_6sdp"
+
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/When"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/txt_when"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="When ?"
+                android:paddingLeft="@dimen/_6sdp"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/datepicker" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+
+            android:layout_toRightOf="@+id/When">
+
+            <EditText
+                android:id="@+id/txtwhere"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="wrap_content"
+                android:hint="Where ?"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_createeventbtn"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Black">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CREATE EVENT"
+            android:textColor="@color/White"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

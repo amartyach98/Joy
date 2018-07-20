@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Joy</string>
+    <string name="Logo">Joy</string>
+    <string name="tagline">Your entire wedding in one place</string>
+
+    <string name="guesttagline">New guest to a Joy wedding</string>
+    <string name="admintagline">I\'m getting married</string>
+    <string name="signinbtn"> <b>PROCEED</b></string>
+    <string name="forgot_pass">Don\'t remember your password?</string>
+    <string name="loginbtn">LOG IN ></string>
+    <string name="signupbtn">CREATE NEW ACCOUNT ></string>
+    <string name="signuptagline">Create New Account</string>
+    <string name="title_activity_event_detail">EventDetailActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="mainpagetag">We can\'t wait to share our special day with you. Help us Capture our Wedding  with Joy</string>
+    <string name="facebook_app_id">1781573835225838</string>
+    <string name="fb_login_protocol_scheme">fb1781573835225838</string>
+
+
+</resources>
